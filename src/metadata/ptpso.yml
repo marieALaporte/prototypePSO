@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ptpso
+
+idspace: PTPSO
+base_url: /obo/ptpso
+
+products:
+- foorbar.owl: https://raw.githubusercontent.com/austinmeier/master/ptpso.owl
+- ptpso.obo: https://raw.githubusercontent.com/austinmeier/master/ptpso.obo
+
+term_browser: ontobee
+example_terms:
+- PTPSO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/austinmeier/ptpso/v
+
+- prefix: /tracker/
+  replacement: https://github.com/austinmeier/ptpso/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PTPSO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/austinmeier/ptpso/master/
