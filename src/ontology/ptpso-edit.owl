@@ -7,7 +7,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/ptpso.owl>
 Import(<http://purl.obolibrary.org/obo/ptpso/imports/obi_import.owl>)
-Import(<http://purl.obolibrary.org/obo/ptpso/imports/ro_import.owl>)
 Annotation(rdfs:comment "prototypePSO")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/PTPSO_00000000>))
