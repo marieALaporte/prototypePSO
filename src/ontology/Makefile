@@ -24,7 +24,7 @@ $(ONT).owl: $(SRC)
 #	$(ROBOT) convert -i $< -f obo -o $(ONT).obo.tmp && mv $(ONT).obo.tmp $@
 
 
-IMPORTS = obi ncbitaxon
+IMPORTS = obi ncbitaxon ro
 IMPORTS_OWL = $(patsubst %, imports/%_import.owl,$(IMPORTS)) 
 #$(patsubst %, imports/%_import.obo,$(IMPORTS))
 
